@@ -1,7 +1,7 @@
 /* Navbar Background Change on Scroll */
 .scrolled {
 	background-color: rgba(0, 0, 0, 0.8);
-	box-shadow: 0 4px 6px rgba(71, 71, 71, 0.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover Effect on Navbar Links */
