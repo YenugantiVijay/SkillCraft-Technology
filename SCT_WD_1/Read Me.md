@@ -7,6 +7,7 @@
   ✅ Fixed Navigation Bar (Visible on all pages) <br>
   ✅ Dynamic Color Change on Scroll <br>
   ✅ Hover Effects with Animation <br>
+  ✅ Responsive in all Devices <br>
   ✅ Smooth Transitions for a Modern UI <br>
 </div>
 
