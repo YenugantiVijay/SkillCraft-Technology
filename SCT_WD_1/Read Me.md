@@ -12,5 +12,5 @@
 </div>
 
 
-This project helped me enhance my frontend development skills, especially in using Tailwind CSS for styling and JavaScript for DOM manipulation.
+This project helped me enhance my frontend development skills, especially in using <b>Bootstrap</b> for styling and JavaScript for DOM manipulation.
 
