@@ -3,55 +3,68 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Responsive Landing Page</title>
-		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Responsive Navbar</title>
+
+		<!-- Bootstrap CDN's -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<!-- Style Sheet Linking -->
 		<link rel="stylesheet" href="style.css" />
+
+		<!-- Java Script File -->
+		<script src="script.js" defer></script>
 	</head>
-	<body class="bg-gray-900 text-white">
-		<!-- Navbar -->
-		<nav
-			id="navbar"
-			class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 p-4 z-50"
-		>
-			<div class="max-w-7xl mx-auto flex justify-between items-center">
-				<h1 class="text-2xl font-bold">My Logo</h1>
 
-				<!-- Desktop Menu -->
-				<ul class="hidden md:flex space-x-6 text-lg">
-					<li><a href="#" class="nav-link">Home</a></li>
-					<li><a href="#" class="nav-link">About</a></li>
-					<li><a href="#" class="nav-link">Services</a></li>
-					<li><a href="#" class="nav-link">Contact</a></li>
-				</ul>
-
-				<!-- Mobile Menu Button -->
-				<button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
-					☰
-				</button>
-			</div>
-
-			<!-- Mobile Dropdown Menu -->
-			<ul
-				id="mobile-menu"
-				class="hidden flex-col space-y-4 bg-black text-white p-4 absolute top-16 left-0 w-full shadow-lg md:hidden"
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<a class="navbar-brand" href="#">Your Brand</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
 			>
-				<li><a href="#" class="nav-link">Home</a></li>
-				<li><a href="#" class="nav-link">About</a></li>
-				<li><a href="#" class="nav-link">Services</a></li>
-				<li><a href="#" class="nav-link">Contact</a></li>
-			</ul>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>Home <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pricing</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 
-		<!-- Hero Section -->
-		<section class="h-screen flex items-center justify-center">
-			<h2 class="text-4xl font-bold">Welcome to My Landing Page</h2>
+		<section class="section">
+			<div class="bg-light">
+				<h1 class="text-center">This is my Home Section</h1>
+			</div>
 		</section>
 
-		<!-- About us Section -->
-		<section class="h-screen flex items-center justify-center">
-			<h2 class="text-4xl font-bold">Welcome to My Landing Page</h2>
+		<section class="section">
+			<div class="bg-light">
+				<h1 class="text-center">This is my Home Section</h1>
+			</div>
 		</section>
-
-		<script src="script.js"></script>
 	</body>
 </html>
