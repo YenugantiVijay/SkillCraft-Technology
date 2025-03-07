@@ -20,15 +20,17 @@ function startTimer() {
   timerInterval = setInterval(function () {
     elapsedTime = Date.now() - startTime;
     display.textContent = formatTime(elapsedTime);
-  }, 10); // Update every 10 milliseconds for better millisecond accuracy
+  }, 10);
 }
 
 function pauseTimer() {
   clearInterval(timerInterval);
+  timerInterval = null; // Important: Reset timerInterval
 }
 
 function resetTimer() {
   clearInterval(timerInterval);
+  timerInterval = null; // Important: Reset timerInterval
   elapsedTime = 0;
   display.textContent = "00:00:00.000";
 }
