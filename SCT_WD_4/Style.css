@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #f0f0f0;
+  transition: background 0.3s, color 0.3s;
+  padding-top: 20px;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.container {
+  width: 65%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .container {
+  background: #222;
+  color: white;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background: #333;
+  color: white;
+  border: 1px solid white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode-toggle {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.time-container {
+  display: flex;
+  gap: 10px;
+}
+
+.time-container input,
+.time-container select {
+  flex: 1;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.task-list {
+  margin-top: 15px;
+}
+
+#taskInput {
+  cursor: text;
+}
+
+#hourInput,
+#minuteInput {
+  cursor: text;
+}
+
+.task {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #007bff;
+  transition: background 0.3s;
+}
+
+body.dark-mode .task {
+  background: #444;
+  color: white;
+}
+
+.task .delete {
+  color: red;
+  cursor: pointer;
+}
+
+.date-time {
+  font-size: 14px;
+  color: gray;
+}
