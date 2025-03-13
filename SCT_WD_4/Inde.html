@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Stylesheet Linking -->
+    <link rel="stylesheet" href="Style.css" />
+
+    <!-- Javascript Link -->
+    <script src="Script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>To-Do App</h2>
+        <i class="fas fa-moon mode-toggle"></i>
+      </div>
+
+      <input type="text" id="taskInput" placeholder="Enter task..." autocomplete="off" />
+
+      <input type="date" id="dateInput" />
+
+      <div class="time-container">
+        <input type="number" id="hourInput" min="1" max="12" placeholder="HH" />
+        <input type="number" id="minuteInput" min="0" max="59" placeholder="MM" />
+        <select id="ampmInput">
+          <option>AM</option>
+          <option>PM</option>
+        </select>
+      </div>
+
+      <button id="addTaskBtn">Add Task</button>
+
+      <div class="task-list" id="taskList"></div>
+    </div>
+  </body>
+</html>
